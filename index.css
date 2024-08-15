@@ -216,7 +216,7 @@ body:not(.user-is-tabbing) a:focus {
 .btn {
     position: relative;
     display: inline-block;
-    padding: 1rem 4.2rem;
+    padding: 1rem 3.2rem;
     text-decoration: none;
     color: inherit;
     border: 1px solid  var(--pink);
@@ -545,6 +545,11 @@ body:not(.user-is-tabbing) a:focus {
     .about__content {
         flex-direction: column-reverse;
         align-items: initial;
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center; */
+        
     }
 }
 
@@ -554,7 +559,7 @@ body:not(.user-is-tabbing) a:focus {
 
 @media(min-width: 901px) {
     .about__text {
-        flex: 0 0 35%;
+        flex: 0 0 45%;
     }
     
     .about__photo-container {
@@ -569,6 +574,13 @@ body:not(.user-is-tabbing) a:focus {
 
 .contact__info {
     max-width: var(--container-medium-width);
+}
+
+.contact__icon {
+    margin-right: 8px; /* Space between the icon and the text */
+    width: 24px; /* Adjust the icon size */
+    height: 24px;
+    vertical-align: middle; /* Ensure it aligns with text */
 }
 
 /* --------------------------------------- */
